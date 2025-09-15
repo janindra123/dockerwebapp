@@ -3,12 +3,12 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: janindra170/chintu:db
+   image: janindra170/k8s:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: janindra170/chintu:app
+   image: janindra170/k8s:appimage
    container_name: containerapp
    ports:
      - "1234:8080"
